@@ -1,2 +1,46 @@
 @use "../../global" as *;
 @use "../../partials" as *;
+
+.rightcard {
+    display: flex;
+    border: 1px solid #E5E7EB;
+    padding:12px 24px;
+    border-radius: 14px;
+    .icon {
+        flex-shrink: 0;
+    }
+    .content {
+        @include flex-column;
+        gap: size(6);
+    }
+    .name {
+        color:  #000;
+        font-family: $inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.1px;
+    }
+    p {
+        color:  #1F2937;
+        font-family: $inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px; 
+        letter-spacing: 0.07px;
+    } 
+    a {
+        color: #1E40AF;
+        font-family: $inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px; 
+        letter-spacing: 0.08px;
+        @include hover {
+            text-decoration: underline;
+        }
+    }
+}
