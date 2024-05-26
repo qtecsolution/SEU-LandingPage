@@ -6,6 +6,7 @@
     border: 1px solid #E5E7EB;
     padding:12px 24px;
     border-radius: 14px;
+    background-color: $white;
     .icon {
         flex-shrink: 0;
     }
@@ -43,4 +44,28 @@
             text-decoration: underline;
         }
     }
+}
+
+.collabcard {
+    border: 1px solid #E5E7EB;
+    padding: 22px;
+    @include flex-column;
+    gap: size(10);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 14px;
+    .text {
+        color:  #1F2937;
+        text-align: center;
+
+        /* XS/Semi Bold */
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 16px; /* 133.333% */
+        letter-spacing: 0.06px;
+    }
+
 }

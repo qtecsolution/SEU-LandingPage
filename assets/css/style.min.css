@@ -256,6 +256,7 @@ button:focus,
   border: 1px solid #E5E7EB;
   padding: 12px 24px;
   border-radius: 14px;
+  background-color: hsl(0, 0%, 100%);
 }
 .rightcard .icon {
   flex-shrink: 0;
@@ -294,6 +295,29 @@ button:focus,
 }
 .rightcard a:not([disabled]):hover {
   text-decoration: underline;
+}
+
+.collabcard {
+  border: 1px solid #E5E7EB;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 14px;
+}
+.collabcard .text {
+  color: #1F2937;
+  text-align: center;
+  /* XS/Semi Bold */
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px; /* 133.333% */
+  letter-spacing: 0.06px;
 }
 
 header {
@@ -1040,6 +1064,8 @@ table tr td {
   border: 1px solid #000;
   transition: all 0.2s ease-out;
   animation: moveCursor1 0.5s infinite alternate;
+  background-color: hsl(224, 64%, 33%);
+  opacity: 0.5;
 }
 
 .expand {
@@ -1069,7 +1095,7 @@ table tr td {
   }
 }
 .about {
-  padding: 30px 0 90px 0;
+  padding: 70px 0 90px 0;
 }
 .about .left-content {
   background-color: #F3F4F6;
@@ -1111,6 +1137,12 @@ table tr td {
   align-items: center;
   gap: 40px;
   margin-top: 25px;
+  flex-direction: column;
+}
+@media screen and (min-width: 30rem) {
+  .about .info-wrapper {
+    flex-direction: row;
+  }
 }
 .about .info-wrapper figure {
   width: 160px;
@@ -1132,6 +1164,12 @@ table tr td {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.12px;
+  text-align: center;
+}
+@media screen and (min-width: 30rem) {
+  .about .info-wrapper .right-title {
+    text-align: left;
+  }
 }
 .about .info-wrapper .des {
   color: #6B7280;
@@ -1141,6 +1179,12 @@ table tr td {
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 0.07px;
+  text-align: center;
+}
+@media screen and (min-width: 30rem) {
+  .about .info-wrapper .des {
+    text-align: left;
+  }
 }
 .about .content {
   padding-inline: 40px;
@@ -1168,6 +1212,31 @@ table tr td {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+.about.reverse {
+  background-color: hsl(224, 64%, 33%);
+}
+
+.collab {
+  padding: 30px 0;
+}
+.collab .section-title {
+  color: #2D3092;
+  text-align: center;
+  /* 3XL/Bold */
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.15px;
+  padding-bottom: 25px;
+}
+
+.collab-cards {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
 }
 
 .h-full {
