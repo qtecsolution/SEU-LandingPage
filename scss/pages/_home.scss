@@ -437,3 +437,49 @@ text-align: center;
     grid-gap: 16px;
     grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
 }
+
+.ranking-wrapper {
+  @include flex-column;
+  gap: size(20);
+  padding-bottom: 40px;
+  .ranking-title {
+    color: $primary;
+  text-align: center;
+  font-family: $inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.12px;
+  }
+  
+}
+.facilities-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: size(20);
+
+  .facilities-title {
+    color: $primary;
+    font-family: $inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.12px;
+    text-align: center;
+  }
+  .facilities {
+    display: flex;
+    padding: 20px 34px;
+    border-radius: 29px;
+    background: #F3F4F6;
+    gap: 10px;
+    flex-direction: column;
+    @include breakpoint(tab992) {
+      flex-direction: row;
+      gap: 3px;
+
+    }
+  }
+}

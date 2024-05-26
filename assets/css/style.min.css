@@ -320,6 +320,71 @@ button:focus,
   letter-spacing: 0.06px;
 }
 
+.card-ranking {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 30px;
+  border-radius: 30px;
+  background: #F3F4F6;
+}
+.card-ranking figure {
+  width: 100%;
+  height: 100%;
+}
+.card-ranking .text {
+  color: #1F2937;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.07px;
+}
+
+.card-facility {
+  border-radius: 16px;
+  background: #FFF;
+  padding: 20px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.card-facility .icon-wrapper {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: flex-start;
+  gap: 6.833px;
+  flex-shrink: 0;
+  background-color: #F6E1CF;
+  padding: 9px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+}
+.card-facility .facility-name {
+  color: #1F2937;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.09px;
+}
+.card-facility p {
+  color: #1F2937;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.07px;
+}
+
 header {
   height: 97px;
   background: hsl(0, 0%, 100%);
@@ -1237,6 +1302,53 @@ table tr td {
   display: grid;
   grid-gap: 16px;
   grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+}
+
+.ranking-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding-bottom: 40px;
+}
+.ranking-wrapper .ranking-title {
+  color: hsl(224, 64%, 33%);
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.12px;
+}
+
+.facilities-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.facilities-wrapper .facilities-title {
+  color: hsl(224, 64%, 33%);
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.12px;
+  text-align: center;
+}
+.facilities-wrapper .facilities {
+  display: flex;
+  padding: 20px 34px;
+  border-radius: 29px;
+  background: #F3F4F6;
+  gap: 10px;
+  flex-direction: column;
+}
+@media screen and (min-width: 62rem) {
+  .facilities-wrapper .facilities {
+    flex-direction: row;
+    gap: 3px;
+  }
 }
 
 .h-full {
