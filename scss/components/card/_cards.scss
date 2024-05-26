@@ -131,3 +131,39 @@
         letter-spacing: 0.07px;
     }
 }
+
+.cardfaculties {
+    @include flex-column;
+    gap: size(24);
+    align-items: flex-start;
+    .facultiethumn {
+        height: 242px;	
+        overflow: hidden;
+        @include w100;
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+        img {
+            @include wh100;
+
+        }
+    }
+    .facultie-title {
+        color: $primary;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.09px;
+    }
+    .facultie-text {
+        color: #1F2937;
+        font-family: $inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; 
+        letter-spacing: 0.07px;
+    }
+
+}
