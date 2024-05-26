@@ -2,3 +2,53 @@
 @use "../partials" as *;
 
 // hero section
+.section-top {
+  background-color: $primary;
+  height: 42px;
+}
+.hero {
+  background-color: #DEE1EB;
+  position: relative;
+  min-height: 80vh;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 300px 100%;
+  background-image: url(../../assets/images/heor.png);
+  @include breakpoint(mobile576) {
+     background-size: auto;
+  }
+  .left-content {
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    .hero-top {
+      color: $secondary;
+      leading-trim: both;
+      text-edge: cap;
+      font-family: $inter;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.15px;
+    }
+    .title {
+      color: $primary;
+      font-family: $inter;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120.902%; /* 72.541px */
+      letter-spacing: 0.3px;
+      margin-top: 5px;
+      @include breakpoint(mobile576) {
+      font-size: 40px;
+        
+      }
+      @include breakpoint(tab992) {
+      font-size: 60px;
+        
+      }
+    }
+  }
+}
