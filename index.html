@@ -78,13 +78,13 @@
                 </div>
                 <div class="col-lg-6 h-100 ">
                     <div class=" h-100">
-                        <a id="play-video" class="video-play-button" href="#">
+                        <button id="play-video" data-bs-toggle="modal" data-bs-target="#exampleModal" class="video-play-button" href="#">
                             <span></span>
-                        </a>
+                        </button>
                     </div>
-                    <div id="video-overlay" class="video-overlay">
+                    <!-- <div id="video-overlay" class="video-overlay">
                         <a class="video-overlay-close">&times;</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -521,8 +521,29 @@
         </div>
     </section>
     <!-- =============RANKING FACILITY SECTION END============ -->
-
-
+    
+    <!-- VIDEO MODAL -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Southeast University ||  Campus</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ezz_4DRb8M8?si=g1pjP5IbukfSP8jI"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- VIDEO MODAL -->
+    <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
