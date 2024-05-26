@@ -1005,7 +1005,7 @@ table tr td {
   border-left: 18px solid #fff;
   border-top: 11px solid transparent;
   border-bottom: 15px solid transparent;
-  top: 10px;
+  top: 2px;
   left: 6px;
 }
 @media screen and (min-width: 36rem) {
