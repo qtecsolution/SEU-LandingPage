@@ -58,9 +58,9 @@
     </header>
     <!-- ======= HEADER END======== -->
     
-    <section class="hero">
+    <section class="hero position-relative">
         <div class="container">
-            <div class="row">
+            <div class="row h-100">
                 <div class="col-lg-6">
                     <div class="left-content">
                         <h3 class="hero-top">
@@ -69,15 +69,55 @@
                         <h1 class="title">Metting The <br/> Challenge of <br/> Time</h1>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <figure>
-                      
-                    </figure>
+                <div class="col-lg-6 h-100 ">
+                    <div class=" h-100">
+                        <a id="play-video" class="video-play-button" href="#">
+                            <span></span>
+                        </a>
+                    </div>
+                    <div id="video-overlay" class="video-overlay">
+                        <a class="video-overlay-close">&times;</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+<script>
+    document.getElementById('play-video').addEventListener('click', function (e) {
+            e.preventDefault();
+            document.getElementById('video-overlay').classList.add('open');
+            var iframe = document.createElement('iframe');
+            iframe.setAttribute('width', '560');
+            iframe.setAttribute('height', '315');
+            iframe.setAttribute('src', 'https://www.youtube.com/embed/ngElkyQ6Rhs');
+            iframe.setAttribute('frameborder', '0');
+            iframe.setAttribute('allowfullscreen', '');
+            document.getElementById('video-overlay').appendChild(iframe);
+        });
 
+        document.querySelectorAll('.video-overlay, .video-overlay-close').forEach(function (element) {
+            element.addEventListener('click', function (e) {
+                e.preventDefault();
+                closeVideo();
+            });
+        });
+
+        document.addEventListener('keyup', function (e) {
+            if (e.keyCode === 27) {
+                closeVideo();
+            }
+        });
+
+        function closeVideo() {
+            var videoOverlay = document.querySelector('.video-overlay.open');
+            videoOverlay.classList.remove('open');
+            var iframe = videoOverlay.querySelector('iframe');
+            if (iframe) {
+                iframe.remove();
+            }
+        }
+
+</script>
 </body>
 </html>
