@@ -77,9 +77,11 @@
     border-radius: 30px;
     background: #F3F4F6;
     figure {
-        @include wh100;
-        img {
+        @include w100;
+        height: auto;
 
+        img {
+            @include wh100;
         }
     }
     .text {

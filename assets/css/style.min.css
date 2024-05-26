@@ -330,6 +330,10 @@ button:focus,
 }
 .card-ranking figure {
   width: 100%;
+  height: auto;
+}
+.card-ranking figure img {
+  width: 100%;
   height: 100%;
 }
 .card-ranking .text {
