@@ -1393,6 +1393,7 @@ table tr td {
 
 .ourfaculties {
   padding-bottom: 50px;
+  padding-top: 30px;
 }
 .ourfaculties .section-title {
   color: #2D3092;
@@ -1404,6 +1405,187 @@ table tr td {
   line-height: normal;
   letter-spacing: 0.15px;
   padding-bottom: 30px;
+}
+
+.eventnotice .section-title {
+  color: #2D3092;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.12px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+@media screen and (min-width: 62rem) {
+  .eventnotice .section-title {
+    text-align: left;
+  }
+}
+.eventnotice .events {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.eventnotice .event {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 16px;
+  border: 1px solid #E5E7EB;
+  background: #FFF;
+  flex-direction: column;
+  /* Box Shadow/sm */
+  box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.03);
+}
+@media screen and (min-width: 36rem) {
+  .eventnotice .event {
+    flex-direction: row;
+  }
+}
+.eventnotice .event .event-thumb {
+  height: 170px;
+  width: 100%;
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: 5px solid #FFF;
+  overflow: hidden;
+}
+@media screen and (min-width: 36rem) {
+  .eventnotice .event .event-thumb {
+    width: 160px;
+    border-radius: 16px 0px 0px 16px;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .eventnotice .event .event-thumb {
+    width: 200px;
+  }
+}
+.eventnotice .event .event-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.eventnotice .event .event-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  padding: 16px;
+}
+@media screen and (min-width: 36rem) {
+  .eventnotice .event .event-content {
+    padding: 0;
+  }
+}
+.eventnotice .event .event-content .event-name {
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.09px;
+}
+.eventnotice .event .event-content .event-des {
+  color: #1F2937;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.07px;
+}
+.eventnotice .event .event-content .learn-more {
+  color: #1E40AF;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.08px;
+  margin-top: 20px;
+}
+.eventnotice .view-all {
+  color: #1E40AF;
+  display: block;
+  text-align: center;
+  /* Base/Semi Bold */
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.08px;
+  margin-top: 24px;
+}
+@media screen and (min-width: 62rem) {
+  .eventnotice .view-all {
+    text-align: left;
+  }
+}
+.eventnotice .notices {
+  border-radius: 32px;
+  background: #F3F4F6;
+  padding: 30px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.eventnotice .notices .notice {
+  display: flex;
+  gap: 0.875rem;
+  border-radius: 15px;
+  border: 1px solid #E5E7EB;
+  background: #FFF;
+  box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.03);
+  padding: 14px;
+  align-items: center;
+}
+.eventnotice .notices .notice .date {
+  flex-shrink: 0;
+  width: 3.125rem;
+  height: 3.125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3125rem;
+  border-radius: 9px;
+  background: #FFE6C2;
+}
+.eventnotice .notices .notice .date .day {
+  color: #EA580C;
+  text-align: center;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.08px;
+}
+.eventnotice .notices .notice .date .month {
+  color: var(--Text-Black-Color, #000);
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.06px;
+}
+.eventnotice .notices .notice .notice-content {
+  padding: 10px 0;
+  color: #1F2937;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.07px;
 }
 
 .h-full {

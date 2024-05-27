@@ -486,6 +486,7 @@ text-align: center;
 
 .ourfaculties {
   padding-bottom: 50px;
+  padding-top: 30px;
   .section-title {
     color: #2D3092;
     text-align: center;
@@ -496,5 +497,180 @@ text-align: center;
     line-height: normal;
     letter-spacing: 0.15px;
     padding-bottom: 30px;
+  }
+}
+
+.eventnotice {
+
+  .section-title {
+    color: #2D3092;
+    font-family: $inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.12px;
+    margin-bottom: 24px;
+    text-align: center;
+    @include breakpoint(tab992) {
+      text-align: left;
+    }
+  }
+  .eventnotice-left {
+
+  }
+  .events {
+    @include flex-column;
+    gap: size(16);
+  }
+  .event {
+    @include flex;
+    align-items: center;
+    gap: size(16);
+    border-radius: 16px;
+    border: 1px solid  #E5E7EB;
+    background:  #FFF;
+    flex-direction: column;
+    @include breakpoint(mobile576) {
+      flex-direction: row;
+    }
+
+/* Box Shadow/sm */
+    box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.03);
+    .event-thumb {
+      height: 170px;
+      width: 100%;
+      flex-shrink: 0;
+      border-radius: 16px;
+      border: 5px solid #FFF;
+      overflow: hidden;
+      @include breakpoint(mobile576) {
+        width: 160px;
+      border-radius: 16px 0px 0px 16px;
+
+      }
+      @include breakpoint(tab992) {
+        width: 200px;
+        
+      }
+
+      img {
+        @include wh100;
+        object-fit: cover;
+      }
+    }
+    .event-content {
+      @include flex-column;
+      gap: size(10);
+      padding: 16px;
+      @include breakpoint(mobile576) {
+        padding:  0;
+      }
+      .event-name {
+        color:  #000;
+        font-family: $inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.09px;
+      }
+      .event-des {
+        color:  #1F2937;
+        font-family: $inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; 
+        letter-spacing: 0.07px;
+      }
+      .learn-more {
+        color: #1E40AF;
+        font-family: $inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px; /* 150% */
+        letter-spacing: 0.08px;
+        margin-top: 20px;
+      }
+    }
+
+  }
+  .view-all {
+    color: #1E40AF;
+    display: block;
+    text-align: center;
+    @include breakpoint(tab992) {
+      text-align: left;
+    }
+
+/* Base/Semi Bold */
+    font-family: $inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.08px;
+    margin-top: 24px;
+  }
+  .notices {
+    border-radius: 32px;
+    background: #F3F4F6;
+    padding: 30px 24px;
+    @include flex-column;
+    gap: size(8);
+    .notice {
+      @include flex;
+      gap: size(14);
+      border-radius:  15px;
+      border: 1px solid  #E5E7EB;
+      background: #FFF;
+      box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.03);
+      padding: 14px;
+      align-items: center;
+      .date {
+        flex-shrink: 0;
+        @include square(50);
+        @include flex-column;
+        align-items: center;
+        justify-content: center;
+        gap: size(5);
+        border-radius:  9px;
+background: #FFE6C2;
+        .day {
+          color: #EA580C;
+          text-align: center;
+          leading-trim: both;
+          text-edge: cap;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 24px; /* 150% */
+          letter-spacing: 0.08px;
+        }
+        .month {
+          color: var(--Text-Black-Color, #000);
+          text-align: center;
+        font-family: $inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px; 
+        letter-spacing: 0.06px;
+        }
+      }
+      .notice-content {
+        padding: 10px 0;
+        color: #1F2937;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px; /* 142.857% */
+        letter-spacing: 0.07px;
+      }
+    }
   }
 }
