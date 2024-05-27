@@ -395,12 +395,20 @@ button:focus,
   gap: 1.5rem;
   align-items: flex-start;
 }
+.cardfaculties:not([disabled]):hover .facultiethumn {
+  transform: scale(0.96);
+}
 .cardfaculties .facultiethumn {
   height: 242px;
   overflow: hidden;
   width: 100%;
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
+  -webkit-transition: transform 350ms ease-in-out;
+  -moz-transition: transform 350ms ease-in-out;
+  -ms-transition: transform 350ms ease-in-out;
+  -o-transition: transform 350ms ease-in-out;
+  transition: transform 350ms ease-in-out;
 }
 .cardfaculties .facultiethumn img {
   width: 100%;
@@ -1821,6 +1829,16 @@ table tr td {
   .authorize-by .authorize-wrapper {
     gap: 37px;
   }
+}
+.authorize-by .authorize-wrapper img {
+  -webkit-transition: all 350ms ease-in-out;
+  -moz-transition: all 350ms ease-in-out;
+  -ms-transition: all 350ms ease-in-out;
+  -o-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+}
+.authorize-by .authorize-wrapper img:not([disabled]):hover {
+  filter: grayscale(1);
 }
 
 .h-full {

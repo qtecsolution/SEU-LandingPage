@@ -722,5 +722,11 @@ background: #FFE6C2;
     gap: 37px;
       
     }
+    img {
+      @include transitionsall;
+      @include hover {
+        filter: grayscale(1);
+      }
+    }
   }
 }
