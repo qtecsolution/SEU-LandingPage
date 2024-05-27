@@ -467,7 +467,6 @@ header .right-menu {
 }
 header .news {
   border-radius: 10px;
-  border: 1px solid #E5E7EB;
   background: #FFF;
   box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, 0.08);
   height: 50px;
@@ -482,10 +481,12 @@ header .news {
 }
 header .news .left {
   padding: 11px 16px;
-  border: 1px solid var(--Border-Border-Color, #E5E7EB);
+  border: 1px solid #E5E7EB;
   box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, 0.08);
   position: relative;
   z-index: 1;
+  border-top-left-radius: 10px;
+  border-right: 0;
 }
 header .news .left .news-pill {
   background: #DBEAFE;
