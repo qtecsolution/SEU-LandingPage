@@ -384,12 +384,16 @@ button:focus,
   gap: 1.5rem;
   align-items: flex-start;
 }
+.cardfaculties:not([disabled]):hover .facultiethumn {
+  transform: scale(0.96);
+}
 .cardfaculties .facultiethumn {
   height: 242px;
   overflow: hidden;
   width: 100%;
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
+  transition: transform 350ms ease-in-out;
 }
 .cardfaculties .facultiethumn img {
   width: 100%;
@@ -456,7 +460,6 @@ header .right-menu {
 }
 header .news {
   border-radius: 10px;
-  border: 1px solid var(--Border-Border-Color, #E5E7EB);
   background: #FFF;
   box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, 0.08);
   height: 50px;
@@ -464,17 +467,19 @@ header .news {
   position: relative;
   width: 80%;
   margin: auto;
-  top: -24px;
+  top: -17px;
   display: flex;
   overflow: hidden;
   transition: all 0.3s ease-out;
 }
 header .news .left {
   padding: 11px 16px;
-  border: 1px solid var(--Border-Border-Color, #E5E7EB);
+  border: 1px solid #E5E7EB;
   box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, 0.08);
   position: relative;
   z-index: 1;
+  border-top-left-radius: 10px;
+  border-right: 0;
 }
 header .news .left .news-pill {
   background: #DBEAFE;
@@ -912,6 +917,7 @@ table tr td {
   font-size: 1rem;
   color: black;
   font-weight: 600;
+  font-family: "Inter", sans-serif;
 }
 
 .accordion-button:not(.collapsed) {
@@ -921,6 +927,7 @@ table tr td {
 
 .accordion-body li a {
   font-size: 12px;
+  font-family: "Inter", sans-serif;
 }
 
 /* general styles */
@@ -1035,7 +1042,12 @@ table tr td {
 }
 @media screen and (min-width: 36rem) {
   .hero {
-    background-size: auto;
+    background-size: auto 100%;
+  }
+}
+@media screen and (min-width: 100rem) {
+  .hero {
+    min-height: 60vh;
   }
 }
 .hero .left-content {
@@ -1237,7 +1249,6 @@ table tr td {
 
 .counter-section {
   padding: 50px 0;
-  background-color: #f8f9fa;
   text-align: center;
 }
 .counter-section .counter {
@@ -1518,6 +1529,7 @@ table tr td {
 
 .eventnotice {
   padding-bottom: 100px;
+  margin-top: 50px;
 }
 .eventnotice .section-title {
   color: #2D3092;
@@ -1749,6 +1761,12 @@ table tr td {
   .authorize-by .authorize-wrapper {
     gap: 37px;
   }
+}
+.authorize-by .authorize-wrapper img {
+  transition: all 350ms ease-in-out;
+}
+.authorize-by .authorize-wrapper img:not([disabled]):hover {
+  filter: grayscale(1);
 }
 
 .h-full {
