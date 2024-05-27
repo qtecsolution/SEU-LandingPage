@@ -545,6 +545,62 @@ header .news-hidden {
     transform: translateX(-100%);
   }
 }
+.menudropdownlist {
+  position: relative;
+}
+.menudropdownlist:hover .dropdown-box {
+  display: block;
+}
+
+.dropdown-box {
+  position: absolute;
+  z-index: 999;
+  left: 0;
+  top: 100%;
+  display: none;
+  animation-name: slideUpIn;
+  animation-duration: 350ms;
+  animation-fill-mode: both;
+}
+
+.menudropdown {
+  width: 415px;
+  background-color: white;
+  padding: 30px;
+  border: 1px solid #E5E7EB;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-top: 14px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.menudropdown a {
+  padding: 10px;
+  display: block;
+}
+
+@keyframes slideUpIn {
+  0% {
+    -webkit-transform: translateY(-1.25rem);
+    -moz-transform: translateY(-1.25rem);
+    -ms-transform: translateY(-1.25rem);
+    transform: translateY(-1.25rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  0% {
+    -webkit-transform: translateY(1.25rem);
+    -moz-transform: translateY(1.25rem);
+    -ms-transform: translateY(1.25rem);
+    transform: translateY(1.25rem);
+  }
+}
 input,
 select,
 textarea {
