@@ -84,12 +84,51 @@
                     <button class="btn-login">Login</button>
                     <button class="btn-apply">Apply Online</button>
                 </div>
-                <div class="hamburger d-block d-lg-none">
+                <div class="hamburger d-block d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                         class="bi bi-list" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
                             d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
                     </svg>
+                </div>
+
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <img src="./assets/images/logo.png" alt="">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Close">x</button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="list-unstyled d-flex flex-column gap-3">
+                            <li>
+                                <a href="#" class="text-dark">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-dark">
+                                    Administration
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-dark">
+                                    Research
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-dark">
+                                    Campus
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-dark">
+                                    About
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="news">
@@ -863,9 +902,9 @@
                 <div class="col-lg-3">
                     <div class="footerbox align-items-center align-items-lg-start">
                         <h3>Quick Link</h3>
-                        <ul>
-                            <li><a href="">Admission</a></li>
-                            <li><a href="">Academic</a></li>
+                        <ul class="align-items-center align-items-lg-start">
+                            <li><a href="" class="text-center">Admission</a></li>
+                            <li><a href="" class="text-center">Academic</a></li>
                             <li><a href="">Administration</a></li>
                             <li><a href="">Faculty</a></li>
                             <li><a href="">Facilities</a></li>
@@ -875,7 +914,7 @@
                 <div class="col-lg-3">
                     <div class="footerbox align-items-center align-items-lg-start">
                         <h3>SEU Resource</h3>
-                        <ul>
+                        <ul class="align-items-center align-items-lg-start">
                             <li><a href="">SEU Resource</a></li>
                             <li><a href="">Academic</a></li>
                             <li><a href="">Administration</a></li>
@@ -887,7 +926,7 @@
                 <div class="col-lg-3">
                     <div class="footerbox align-items-center align-items-lg-start">
                         <h3>Others</h3>
-                        <ul>
+                        <ul class="align-items-center align-items-lg-start">
                             <li><a href="">Convocation</a></li>
                             <li><a href="">Faq</a></li>
                             <li><a href="">Prospect</a></li>
