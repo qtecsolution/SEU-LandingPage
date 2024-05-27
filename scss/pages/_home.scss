@@ -15,7 +15,10 @@
   background-size: 300px 100%;
   background-image: url(../../assets/images/heor.png);
   @include breakpoint(mobile576) {
-    background-size: auto;
+    background-size: auto 100%;
+  }
+  @include breakpoint(desktop1600) {
+    min-height: 60vh;
   }
   .left-content {
     top: 50%;
@@ -214,7 +217,6 @@
 }
 .counter-section {
   padding: 50px 0;
-  background-color: #f8f9fa;
   text-align: center;
   .counter {
     margin-bottom: 20px;
@@ -502,6 +504,7 @@ text-align: center;
 
 .eventnotice {
   padding-bottom: 100px;
+  margin-top: 50px;
 
   .section-title {
     color: #2D3092;
@@ -718,6 +721,12 @@ background: #FFE6C2;
     @include breakpoint(mobile576) {
     gap: 37px;
       
+    }
+    img {
+      @include transitionsall;
+      @include hover {
+        filter: grayscale(1);
+      }
     }
   }
 }

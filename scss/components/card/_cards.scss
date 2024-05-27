@@ -136,12 +136,18 @@
     @include flex-column;
     gap: size(24);
     align-items: flex-start;
+    @include hover {
+        .facultiethumn {
+            transform: scale(0.96);
+        }
+    }
     .facultiethumn {
         height: 242px;	
         overflow: hidden;
         @include w100;
         border-top-left-radius: 24px;
         border-top-right-radius: 24px;
+        @include transitiontransform;
         img {
             @include wh100;
 
