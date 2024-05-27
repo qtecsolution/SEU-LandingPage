@@ -786,6 +786,106 @@ input[type=search]::-webkit-search-results-decoration:focus {
 .tooltip-inner {
   font-size: 0.75rem;
 }
+footer {
+  background: #04152D;
+  padding-top: 100px;
+}
+footer .addressbox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  margin-top: 28px;
+}
+footer .addressbox h5 {
+  color: #FFF;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.08px;
+}
+footer .addressbox p {
+  color: var(--colors-white-70, rgba(255, 255, 255, 0.7));
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.07px;
+}
+footer .socialbox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  margin-top: 10px;
+}
+footer .socialbox h5 {
+  color: #FFF;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.08px;
+}
+footer .socialbox ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.8125rem;
+}
+footer .socialbox ul a {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #182D49;
+  padding: 10px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+}
+footer .footerbox {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+footer .footerbox h3 {
+  color: #FFF;
+  font-family: "Inter", sans-serif;
+  font-size: 18.75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 170.667% */
+  letter-spacing: -0.5px;
+}
+footer .footerbox ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+footer .footerbox ul a {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 125% */
+  letter-spacing: -0.5px;
+}
+footer .footerbox ul a:not([disabled]):hover {
+  color: hsl(224, 64%, 33%);
+}
+
 .preloader {
   background: #fff;
   width: 100%;
