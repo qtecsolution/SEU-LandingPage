@@ -675,3 +675,49 @@ background: #FFE6C2;
     }
   }
 }
+
+.authorize-by {
+  padding: 50px 0;
+  padding-top: 0;
+  @include breakpoint(mobile576) {
+    padding-top: 50px;
+  }
+  .line {
+    display: flex;
+    align-items: center;
+    gap: size(30);
+    @include breakpoint(mobile576) {
+      gap: size(60);
+      
+    }
+    span {
+      white-space: nowrap;
+      color: #1E40AF;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px; /* 150% */
+      letter-spacing: 0.08px;
+    }
+    .drow {
+      flex-grow: 1;
+     height: 3px;
+     background-color: #E5E7EB;
+      display: block;
+      width: 100%;
+    }
+  }
+  .authorize-wrapper {
+    padding: 45px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    @include breakpoint(mobile576) {
+    gap: 37px;
+      
+    }
+  }
+}
