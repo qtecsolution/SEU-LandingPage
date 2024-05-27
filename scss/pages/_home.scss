@@ -501,6 +501,7 @@ text-align: center;
 }
 
 .eventnotice {
+  padding-bottom: 100px;
 
   .section-title {
     color: #2D3092;
@@ -616,7 +617,7 @@ text-align: center;
   }
   .notices {
     border-radius: 32px;
-    background: #F3F4F6;
+    background: $primary;
     padding: 30px 24px;
     @include flex-column;
     gap: size(8);

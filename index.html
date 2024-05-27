@@ -21,7 +21,7 @@
     <!-- ======= SECTION TOP END======== -->
 
     <!-- ======= HEADER START======== -->
-    <header class="">
+    <header class="sticky-top">
         <div class="container">
             <div class="header-content">
                 <a href="" class="logo">
@@ -703,6 +703,10 @@
             var swiper = new Swiper('.swiper-container', {
                 // Swiper options:
                 loop: true,
+                 effect: 'fade',
+                 fadeEffect: {
+                    crossFade: true // Enables the cross fade effect
+                },
                 autoplay: {
                     delay: 3000, // Time between slides in milliseconds (3 seconds)
                     disableOnInteraction: false, // Keep autoplaying even after user interactions
@@ -720,40 +724,30 @@
                 },
                 // Add other Swiper options if needed
             });
-        });
-        document.getElementById('play-video').addEventListener('click', function (e) {
-            e.preventDefault();
-            document.getElementById('video-overlay').classList.add('open');
-            var iframe = document.createElement('iframe');
-            iframe.setAttribute('width', '560');
-            iframe.setAttribute('height', '315');
-            iframe.setAttribute('src', 'https://www.youtube.com/embed/ngElkyQ6Rhs');
-            iframe.setAttribute('frameborder', '0');
-            iframe.setAttribute('allowfullscreen', '');
-            document.getElementById('video-overlay').appendChild(iframe);
-        });
 
-        document.querySelectorAll('.video-overlay, .video-overlay-close').forEach(function (element) {
-            element.addEventListener('click', function (e) {
-                e.preventDefault();
-                closeVideo();
+                const newsSection = document.querySelector('.news');
+            let lastScrollY = window.scrollY;
+
+             window.addEventListener('scroll', () => {
+                if (window.scrollY <  190) {
+                    // At the top of the page
+                    newsSection.classList.remove('news-hidden');
+                } else if (window.scrollY > lastScrollY) {
+                    // Scrolling down
+                    newsSection.classList.add('news-hidden');
+                } else {
+                    // Scrolling up
+                    //newsSection.classList.remove('news-hidden');
+                }
+                lastScrollY = window.scrollY;
             });
-        });
 
-        document.addEventListener('keyup', function (e) {
-            if (e.keyCode === 27) {
-                closeVideo();
-            }
         });
+     
+          
 
-        function closeVideo() {
-            var videoOverlay = document.querySelector('.video-overlay.open');
-            videoOverlay.classList.remove('open');
-            var iframe = videoOverlay.querySelector('iframe');
-            if (iframe) {
-                iframe.remove();
-            }
-        }
+
+  
 
     </script>
 

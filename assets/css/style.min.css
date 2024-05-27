@@ -429,6 +429,7 @@ header {
   height: 97px;
   background: hsl(0, 0%, 100%);
   position: relative;
+  z-index: 999;
 }
 header .header-content {
   display: flex;
@@ -436,6 +437,7 @@ header .header-content {
   align-items: center;
   height: 100%;
   height: 97px;
+  background-color: hsl(0, 0%, 100%);
 }
 header .deskmenu {
   margin: 0;
@@ -443,6 +445,7 @@ header .deskmenu {
   list-style: none;
   display: flex;
   align-items: center;
+  background-color: #fff;
   gap: 1rem;
 }
 header .deskmenu a {
@@ -469,13 +472,13 @@ header .news {
   box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, 0.08);
   height: 50px;
   top: 100%;
-  z-index: 1;
   position: relative;
   width: 80%;
   margin: auto;
   top: -24px;
   display: flex;
   overflow: hidden;
+  transition: all 0.3s ease-out;
 }
 header .news .left {
   padding: 11px 16px;
@@ -500,6 +503,10 @@ header .news .left .news-pill {
 header .news .right {
   overflow: hidden;
   flex-grow: 1;
+}
+header .news-hidden {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .news-marquee {
@@ -1407,6 +1414,9 @@ table tr td {
   padding-bottom: 30px;
 }
 
+.eventnotice {
+  padding-bottom: 100px;
+}
 .eventnotice .section-title {
   color: #2D3092;
   font-family: "Inter", sans-serif;
@@ -1527,7 +1537,7 @@ table tr td {
 }
 .eventnotice .notices {
   border-radius: 32px;
-  background: #F3F4F6;
+  background: hsl(224, 64%, 33%);
   padding: 30px 24px;
   display: flex;
   flex-direction: column;
