@@ -2,88 +2,90 @@
 @use "../../partials" as *;
 
 footer {
-    background: #04152D;
-    padding-top: 100px;
-    .footer-logo {
-       
+  background: #04152d;
+  padding-top: 100px;
+  .footer-logo {
+  }
+  .addressbox {
+    @include flex-column;
+    gap: size(10);
+    margin-top: 28px;
+    h5 {
+      color: #fff;
+      font-family: $inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0.08px;
     }
-    .addressbox {
-        @include flex-column;
-        gap: size(10);
-        margin-top: 28px;
-        h5 {
-            color: #FFF;
-            font-family: $inter;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 24px; 
-            letter-spacing: 0.08px;
-        }
-        p {
-            color: var(--colors-white-70, rgba(255, 255, 255, 0.70));
+    p {
+      color: var(--colors-white-70, rgba(255, 255, 255, 0.7));
 
-            font-family: $inter;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 20px; 
-            letter-spacing: 0.07px;
-        }
+      font-family: $inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0.07px;
     }
-    .socialbox {
-        @include flex-column;
-        gap: size(10);
-        margin-top: 10px;
-        h5 {
-            color: #FFF;
+  }
+  .socialbox {
+    @include flex-column;
+    gap: size(10);
+    margin-top: 10px;
+    h5 {
+      color: #fff;
 
-            font-family: $inter;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 24px; 
-            letter-spacing: 0.08px;
-        }
-        ul {
-            @include list-horizontal;
-            gap: size(13);
-            a {
-                @include square(40);
-                @include flex-center;
-                background-color: #182D49;
-                padding: 10px;
-                @include circle;
-            }
-        }
+      font-family: $inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0.08px;
     }
-    .footerbox {
-        @include flex-column;
-        gap: size(24);
-        h3 {
-            color: #FFF;
-            font-family: $inter;
-            font-size: 18.75px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 32px; /* 170.667% */
-            letter-spacing: -0.5px;
-        }
-        ul {
-            @include list-vertical;
-            gap: size(20);
-            a {
-                color: rgba(255, 255, 255, 0.70);
-                font-family: $inter;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 20px; /* 125% */
-                letter-spacing: -0.5px;
-                @include hover {
-                    color: $primary;
-                }
-            }
-        }
+    ul {
+      @include list-horizontal;
+      gap: size(13);
+      a {
+        @include square(40);
+        @include flex-center;
+        background-color: #182d49;
+        padding: 10px;
+        @include circle;
+      }
     }
+  }
+  .footerbox {
+    @include flex-column;
+    gap: size(24);
+    h3 {
+      color: #fff;
+      font-family: $inter;
+      font-size: 18.75px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 32px; /* 170.667% */
+      letter-spacing: -0.5px;
+    }
+    ul {
+      @include list-vertical;
+      gap: size(20);
+      a {
+        color: rgba(255, 255, 255, 0.7);
+        font-family: $inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px; /* 125% */
+        letter-spacing: -0.5px;
+        @include hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+  .copyright-text {
+    color: white;
+  }
 }
