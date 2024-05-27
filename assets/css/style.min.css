@@ -548,6 +548,10 @@ header .news-hidden {
 .menudropdownlist {
   position: relative;
 }
+.menudropdownlist:hover > a {
+  color: hsl(224, 64%, 33%);
+  font-weight: 600;
+}
 .menudropdownlist:hover .dropdown-box {
   display: block;
 }
@@ -564,9 +568,9 @@ header .news-hidden {
 }
 
 .menudropdown {
-  width: 415px;
+  width: max-content;
   background-color: white;
-  padding: 30px;
+  padding: 50px;
   border: 1px solid #E5E7EB;
   margin: 0;
   padding: 0;
@@ -575,10 +579,16 @@ header .news-hidden {
   flex-direction: column;
   margin-top: 14px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 .menudropdown a {
-  padding: 10px;
+  padding: 10px 20px;
   display: block;
+}
+.menudropdown a:hover {
+  transform: translateX(2px);
 }
 
 @keyframes slideUpIn {
